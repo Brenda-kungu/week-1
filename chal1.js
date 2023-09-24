@@ -1,16 +1,19 @@
-function studentGrade(){
-    let score = 79;
-    let letter;
-if (score > 79) {
-    letter = "A";
-} else if (score >=60 && score <= 79) {
-    letter = "B";
-} else if (score >=59 && score <= 49) {
-    letter = "C";
-} else if (score >40 && score < 49) {
-    letter = "D";
-} else {
-    letter = "E";
+function calculateGrade(){
+        let grade;
+        let marks;
+    if ( marks >= 0 && marks <= 100) {
+        
+        if (marks > 79){
+            grade = 'A';
+        } else if (marks >= 60) {
+            grade = 'B';
+        } else if (marks >= 50) {
+            grade = 'C';
+        } else if (marks >= 40) {
+            grade = 'D';
+        } else {
+            grade = 'E';
+        }
+    }
+    console.log(`Grade ` + letter  )
 }
-}
-
